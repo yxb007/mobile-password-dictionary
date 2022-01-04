@@ -7,8 +7,8 @@ cookie = cookielib.CookieJar()
 handler = urllib2.HTTPCookieProcessor(cookie)
 opener = urllib2.build_opener(handler)
 
-p= raw_input("Please input the PinYing of your Province:")
-c= raw_input("Please input the PinYing of your City:")
+p= raw_input("Please input the PinYing of your Province:zhejiang")
+c= raw_input("Please input the PinYing of your City:jiaxing")
 
 url="http://www.51hao.cc/city/"+p+"/"+c+".php"
 request = urllib2.Request(url)
